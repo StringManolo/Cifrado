@@ -62,7 +62,8 @@ function desmyszkowski(texto_cifrado, clave) {
   const numero_columnas = Math.ceil(longitud_texto_cifrado / longitud_clave);
 
   // Obtenemos el número de letras adicionales en la última columna de la matriz
-  const letras_adicionales = (longitud_clave * numero_columnas) - longitud_texto_cifrado;                                                                                                                                                                                 // Ordenamos la clave alfabéticamente
+  const letras_adicionales = (longitud_clave * numero_columnas) - longitud_texto_cifrado;
+  // Ordenamos la clave alfabéticamente
   const clave_ordenada = clave.split('').sort().join('');
 
   // Obtenemos el orden de la clave
