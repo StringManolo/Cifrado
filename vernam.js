@@ -16,7 +16,8 @@ function desvernam(cifrado, clave) {
   for (let i = 0; i < cifrado.length; i++) {
     let asciiCifrado = cifrado.charCodeAt(i);
     let asciiClave = clave.charCodeAt(i % clave.length);
-    let asciiMensaje = (asciiCifrado - asciiClave + 256) % 256;                             mensaje += String.fromCharCode(asciiMensaje);
+    let asciiMensaje = (asciiCifrado - asciiClave + 256) % 256;
+    mensaje += String.fromCharCode(asciiMensaje);
   }
   return mensaje;
 }
